@@ -1,9 +1,9 @@
+#ifndef BOARD_SACHY
+#define BOARD_SACHY
+
 #include <cstdlib>
 
 #include "unit.h"
-
-#ifndef BOARD_SACHY
-#define BOARD_SACHY
 
 class Board{
 	public:

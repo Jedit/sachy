@@ -1,7 +1,7 @@
-#include "board.h"
-
 #ifndef UNIT_SACHY
 #define UNIT_SACHY
+
+class Board;
 
 class Unit{
 	public:
