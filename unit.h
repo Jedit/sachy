@@ -1,7 +1,7 @@
 #ifndef UNIT_SACHY
 #define UNIT_SACHY
 
-#include "board.h"
+//#include "board.h"
 
 class Unit{
 	public:
@@ -12,7 +12,7 @@ class Unit{
 			
 		}
 	private:
-		Board board; //do not destroy
+		//Board * board; //do not destroy
 };
 
 #endif
