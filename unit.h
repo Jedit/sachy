@@ -1,6 +1,8 @@
 #ifndef UNIT_SACHY
 #define UNIT_SACHY
 
+#include "board.h"
+
 class Unit{
 	public:
 		Unit(Board * b) : board(b) {
