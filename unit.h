@@ -5,7 +5,7 @@
 
 class Unit{
 	public:
-		Unit(Board * b) : board(b) {
+		Unit(/*Board * b) : board(b*/) {
 			
 		}
 		~Unit() {
