@@ -3,6 +3,8 @@
 
 #include <cstdlib>
 
+#include "pos.h"
+
 class Board;
 
 class Unit{
