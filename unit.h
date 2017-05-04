@@ -12,7 +12,7 @@ class Unit{
 			
 		}
 	private:
-		//Board * board; //do not destroy
+		
 };
 
 #endif
