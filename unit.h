@@ -1,16 +1,21 @@
 #ifndef UNIT_SACHY
 #define UNIT_SACHY
 
+#include <cstdlib>
+
+class Board;
+
 class Unit{
 	public:
-		Unit() {
+		Unit(bool isWhite = true) {
+			white = isWhite;
+		}
+		virtual ~Unit() {
 			
 		}
-		~Unit() {
-			
-		}
-	private:
-		
+		virtual vector<Pos> getPosibleMoves(const Board * b, const Pos & pos);
+	protected:
+		bool white;
 };
 
 #endif
