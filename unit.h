@@ -15,7 +15,7 @@ class Unit{
 		virtual ~Unit() {
 			
 		}
-		virtual vector<Pos> getPosibleMoves(const Board * b, const Pos & pos) = 0;
+		virtual std::vector<Pos> getPosibleMoves(const Board * b, const Pos & pos) = 0;
 	protected:
 		bool white;
 };
