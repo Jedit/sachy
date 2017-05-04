@@ -3,8 +3,8 @@ CPP  = g++
 CXXFLAGS = -Wall -pedantic
 
 
-sachy: main.o board.o unit.o pos.o
-	$(CPP) main.o board.o unit.o pos.o -o "sachy"
+sachy: main.o board.o unit.o pos.o move.o
+	$(CPP) main.o board.o unit.o pos.o move.o -o "sachy"
 
 main.o: main.cpp
 	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
@@ -17,3 +17,6 @@ unit.o: unit.cpp
 
 pos.o: pos.cpp
 	$(CPP) -c pos.cpp -o pos.o $(CXXFLAGS)
+
+move.o: move.cpp
+	$(CPP) -c move.cpp -o move.o $(CXXFLAGS)
