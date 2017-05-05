@@ -2,6 +2,7 @@
 #define UNIT_SACHY
 
 #include <vector>
+#include <string>
 
 #include "pos.h"
 
@@ -16,6 +17,7 @@ class Unit{
 			
 		}
 		virtual std::vector<Pos> getPosibleMoves(const Board * b, const Pos & pos) = 0;
+		virtual std::string getTypeName() = 0;
 	protected:
 		bool white;
 };
