@@ -8,22 +8,23 @@
 class Board{
 	public:
 		Board(int s=8) : size(s) {
-			board = new Unit*[size*size];
+			field = new Unit*[size*size];
 			for(int i = 0; i < (size*size); i++) {
-				board[i] = NULL;
+				field[i] = NULL;
 			}
 		}
 		~Board() {
 			for(int i = 0; i < (size*size); i++) {
-				delete board[i];
+				delete field[i];
 			}
-			delete board;
+			delete field;
 		}
 		int getSize();
 		Unit * getUnitAt(int x, int y);
 	private:
 		int size;
-		Unit ** board;
+		Unit ** field;
+		Unit ** dead;
 };
 
 #endif

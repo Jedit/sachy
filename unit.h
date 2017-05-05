@@ -18,6 +18,9 @@ class Unit{
 		}
 		virtual std::vector<Pos> getPosibleMoves(const Board * b, const Pos & pos) = 0;
 		virtual std::string getTypeName() = 0;
+		bool isWhite() {
+			return white;
+		}
 	protected:
 		bool white;
 };
